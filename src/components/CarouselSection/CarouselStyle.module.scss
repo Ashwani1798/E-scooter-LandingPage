@@ -1,31 +1,35 @@
 @use "../../styles/colors.scss";
 @use "../../styles/layout.scss";
 
-.carouselOuterContainer{
-    max-width: 1440px;
-    height: auto;
-    background-color: colors.$inputBg;
+.carouselOuterContainer {
+  max-width: 1440px;
+  height: auto;
+  background-color: colors.$inputBg;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 78px;
+  padding-bottom: 82px;
+
+  .carouselInnerContainer {
+    max-width: 1300px;
+
+    .carouselContainer {
+      margin: 50px;
+      display: flex;
+      gap: 36px;
+      justify-content: center;
+    }
+  }
+
+  .carouselBtnContainer {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; 
-    padding-top: 78px;
-    padding-bottom: 82px;
+    gap: 10px;
+    margin-top: 43px;
 
-    .carouselContainer{
-        display: flex;
-        gap: 36px;
-        flex-wrap: wrap;
-        justify-content: center;
+    @include layout.mobile {
+      display: none;
     }
-
-    .carouselBtnContainer{
-        display: flex;
-        gap:10px;
-        margin-top: 43px;
-
-        @include layout.mobile{
-            display: none;
-        }
-    }
+  }
 }

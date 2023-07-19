@@ -29,4 +29,5 @@ export const clientCard = [
     clientName: "Britain Eriksen",
     clientProfile: "CEO Universal",
   },
+  
 ];
