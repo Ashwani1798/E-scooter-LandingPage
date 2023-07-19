@@ -1,0 +1,28 @@
+.productInfoWrapper {
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  .contentWrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    padding-top: 50px;
+
+    .leftContent{
+      max-width: 748px;
+      height: auto;
+
+      img{
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .rightContent {
+      display: flex;
+      flex-direction: column;
+      margin-inline: auto;
+      gap: 34px;
+    }
+  }
+}

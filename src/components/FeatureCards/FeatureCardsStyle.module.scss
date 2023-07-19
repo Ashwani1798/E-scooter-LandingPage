@@ -1,0 +1,36 @@
+@use "../../styles/colors.scss";
+
+.FeatureCardWrapper {
+  max-width: 175px;
+  max-height: 137px;
+  background: colors.$white;
+  color: colors.$grey;
+  padding: 28px 35px 33px;
+  border-radius: 6.606px;
+  box-shadow: 0px 13.211169242858887px 26.422338485717773px 0px
+    rgba(0, 0, 0, 0.06);
+  transition: 0.3s all ease-in-out;
+
+  .textWrapper {
+    min-width: 139px;
+    text-align: center;
+
+    .boldText {
+      span {
+        font-size: 20px;
+      }
+    }
+
+    .lightText {
+      margin-top: 18px;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 17px;
+    }
+  }
+}
+
+.FeatureCardWrapper:hover {
+  background-color: colors.$grey;
+  color: colors.$background;
+}

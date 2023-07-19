@@ -1,0 +1,97 @@
+@use "../../styles/colors.scss";
+@use "../../styles/layout.scss";
+
+.navbarContainer {
+  padding: 26px 50px;
+  margin-inline: auto;
+  border-bottom: 1px solid #eae8f3;
+
+  @include layout.mobile {
+    padding: 15px 25px;
+  }
+
+  .navbarWrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include layout.mobile {
+      display: none;
+    }
+    .navLogo {
+      max-width: 69px;
+      height: auto;
+
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .navPages {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+
+      .navLinks {
+        position: relative;
+        transition: 0.3s all ease-in-out;
+
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          font-weight: 400;
+          color: colors.$grey;
+        }
+
+        &::before {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          width: 0%;
+          opacity: 0;
+          content: "";
+          transition: 0.3s all ease-in-out;
+          border: 1px solid colors.$grey;
+        }
+
+        &:hover {
+          &::before {
+            opacity: 1;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .navBtns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+  }
+
+  .mobileNavbarWrapper {
+    display: none;
+
+    @include layout.mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .navLogo {
+        max-width: 40px;
+        height: auto;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
