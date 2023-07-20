@@ -1,0 +1,117 @@
+@use "../../styles/colors.scss";
+@use "../../styles/layout.scss";
+
+.heroSectionWrapper {
+  position: relative;
+  min-height: 660px;
+  max-width: 1440px;
+  margin-inline: auto;
+
+  .leftTextData {
+    position: absolute;
+    top: 53px;
+    left: 50px;
+    max-width: 586px;
+    z-index: 2;
+
+    @include layout.tablet {
+      position: relative;
+    }
+
+    .mainHeading {
+      h1 {
+        font-weight: 300;
+      }
+
+      span {
+        font-weight: 700;
+      }
+    }
+
+    .divider {
+      max-width: 335px;
+      border: 4px solid colors.$grey;
+      margin-top: 93px;
+      margin-bottom: 62px;
+    }
+
+    .subHeading {
+      max-width: 353px;
+      margin-bottom: 53px;
+
+      h5 {
+        font-weight: 400;
+      }
+    }
+
+    .featuredBtns {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 430px;
+
+      .arrowbtnWrapper {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .arrowBtn {
+          height: 58px;
+          width: 58px;
+          background-color: colors.$grey;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .arrowicon {
+            transition: 0.3s all ease-in-out;
+          }
+        }
+
+        .arrowBtnText {
+          margin-left: 22px;
+          font-weight: 500px;
+        }
+      }
+
+      .arrowbtnWrapper:hover {
+        .arrowBtn {
+          .arrowicon {
+            transform: translateX(10px);
+          }
+        }
+      }
+    }
+  }
+
+  .HeroBannerImage {
+    position: absolute;
+    top: 34px;
+    right: 0px;
+    max-width: 856px;
+    height: auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    @include layout.tablet {
+      position: relative;
+      margin-inline: auto;
+      max-width: 750px;
+    }
+  }
+}
+
+.featureCardsWrapper {
+  margin-top: 115px;
+  margin-bottom: 64px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}

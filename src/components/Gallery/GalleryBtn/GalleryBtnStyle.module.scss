@@ -1,0 +1,18 @@
+@use "../../../styles/colors.scss";
+
+.btnWrapper {
+  max-width: 570px;
+  border-radius: 10px;
+  border: 2px solid colors.$grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 29px 0;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+
+  &:hover {
+    background-color: colors.$grey;
+    color: colors.$background;
+  }
+}

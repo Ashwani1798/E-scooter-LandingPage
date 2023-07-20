@@ -1,0 +1,92 @@
+@use "../../styles/layout.scss";
+
+.galleryWrapper {
+  margin-top: 64px;
+  margin-bottom: 64px;
+
+  .headingWrapper {
+    text-align: center;
+    margin-bottom: 112px;
+
+    h2 {
+      font-weight: 700;
+    }
+
+    h6 {
+      font-weight: 400;
+      line-height: 28px;
+      margin-top: 34px;
+    }
+  }
+
+  .contentWrapper {
+    margin-top: 112px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 20px;
+    gap: 1rem;
+    flex-wrap: wrap-reverse;
+
+    .leftWrapper {
+      margin-inline: auto;
+      .leftImg {
+        margin-bottom: 55px;
+        max-width: 533px;
+        height: auto;
+        position: relative;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+
+        h4 {
+          position: absolute;
+          top: 30px;
+          left: 38px;
+        }
+      }
+
+      .btnwrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 27px;
+      }
+    }
+
+    .rightWrapper {
+      margin-inline: auto;
+
+      .topImage,
+      .bottomImage {
+        max-width: 533px;
+        height: auto;
+        position: relative;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .topImage {
+        margin-bottom: 96px;
+
+        h4 {
+          position: absolute;
+          top: 30px;
+          left: 38px;
+        }
+      }
+
+      .bottomImage {
+        h4 {
+          position: absolute;
+          top: 30px;
+          left: 38px;
+        }
+      }
+    }
+  }
+}
