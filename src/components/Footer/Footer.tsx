@@ -1,7 +1,9 @@
-import React from "react";
-import stl from "./FooterStyle.module.scss";
-import { footerImg, footerLinks, Copyright } from "../DummyData/Footer";
 import Image from "next/image";
+
+import { footerImg, footerLinks, Copyright } from "../DummyData/Footer";
+
+import stl from "./FooterStyle.module.scss";
+
 const Footer = () => {
   return (
     <>

@@ -1,7 +1,3 @@
-import React from 'react'
-
-
-
 type FeatureCardsProp = {
 largeText: string,
 subText : string,

@@ -1,16 +1,17 @@
-import React from 'react'
-
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 
-import {heroSectionData} from "../DummyData/HeroSection"
+import { heroSectionData } from "../DummyData/HeroSection";
 
-import stl from "./HeroSectionStyle.module.scss"
-import Image from 'next/image'
+import Image from "next/image";
+
 import FeatureCards from "../FeatureCards";
 import { FeatureCardsData } from "../DummyData/FeaturCards.js";
+
+import stl from "./HeroSectionStyle.module.scss";
+
 const HeroSection = () => {
   const { escooter, heading, boldHeading, subHeading } = heroSectionData;
-   const feature = FeatureCardsData;
+  const feature = FeatureCardsData;
   return (
     <>
       <div className={stl.heroSectionWrapper}>
@@ -55,6 +56,6 @@ const HeroSection = () => {
       </div>
     </>
   );
-}
+};
 
-export default HeroSection
+export default HeroSection;

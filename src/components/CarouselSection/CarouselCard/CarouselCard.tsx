@@ -1,7 +1,8 @@
-import React from 'react'
-import stl from "./CarouselCardStyle.module.scss"
-import { starIcon} from "../../DummyData/CarouselSection";
 import Image from 'next/image'
+
+import { starIcon} from "../../DummyData/CarouselSection";
+
+import stl from "./CarouselCardStyle.module.scss"
 
 type CarouselCardProps = {
   description: string;

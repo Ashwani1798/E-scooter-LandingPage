@@ -1,11 +1,11 @@
-import React from "react";
+import Image from "next/image";
+
 import GalleryBtn from "./GalleryBtn";
 
+import HeadingAndSubheading from "../HeadingAndSubheading";
 import { heading, imagesAndText, btnData } from "../DummyData/Gallery";
 
 import stl from "./GalleryStyle.module.scss";
-import Image from "next/image";
-import HeadingAndSubheading from "../HeadingAndSubheading";
 
 const Gallery = () => {
   const headingData = heading;
@@ -14,7 +14,10 @@ const Gallery = () => {
   return (
     <>
       <div className={stl.galleryWrapper}>
-        <HeadingAndSubheading heading={headingData[0]} subHeading={headingData[1]}/>
+        <HeadingAndSubheading
+          heading={headingData[0]}
+          subHeading={headingData[1]}
+        />
         <div className={stl.contentWrapper}>
           <div className={stl.leftWrapper}>
             <div className={stl.leftImg}>

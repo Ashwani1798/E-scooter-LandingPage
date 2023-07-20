@@ -1,17 +1,14 @@
-import React from 'react'
-
 import MenuIcon from "@mui/icons-material/Menu";
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
 
-import {navbarData} from "../DummyData/Navbar"
+import Button from "../Button";
+import { navbarData } from "../DummyData/Navbar";
 
-import stl from "./NavbarStyle.module.scss"
-import Link from 'next/link'
-import Button from '../Button'
-
+import stl from "./NavbarStyle.module.scss";
 
 const Navbar = () => {
-    const { navlogo, navPages, navBtns } = navbarData;
+  const { navlogo, navPages, navBtns } = navbarData;
   return (
     <>
       <div className={stl.navbarContainer}>
@@ -43,6 +40,6 @@ const Navbar = () => {
       </div>
     </>
   );
-}
+};
 
-export default Navbar
+export default Navbar;

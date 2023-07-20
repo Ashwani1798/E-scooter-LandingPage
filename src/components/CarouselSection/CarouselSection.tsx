@@ -1,13 +1,14 @@
 "use client";
-import React from "react";
-import CarouselCard from "./CarouselCard";
-import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
+import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
-import "@splidejs/react-splide/css";
+
+import CarouselCard from "./CarouselCard";
 import HeadingAndSubheading from "../HeadingAndSubheading";
 import { heading, clientCard } from "../DummyData/CarouselSection";
+
+import "@splidejs/react-splide/css";
 import stl from "./CarouselStyle.module.scss";
 
 const CarouselSection = () => {

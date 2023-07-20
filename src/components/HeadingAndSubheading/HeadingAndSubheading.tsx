@@ -1,4 +1,3 @@
-import React from "react";
 import stl from "./HeadingAndSubheadingStyle.module.scss";
 
 type HeadingAndSubheadingProps = {

@@ -1,9 +1,9 @@
-import React from "react";
 import stl from "./GalleryBtnStyle.module.scss";
 
 type GalleryBtnProp ={
     btnText : string
 }
+
 const GalleryBtn = ({btnText}:GalleryBtnProp) => {
   return (
     <>

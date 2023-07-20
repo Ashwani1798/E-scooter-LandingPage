@@ -1,5 +1,6 @@
-import React,{ReactNode} from 'react'
- import stl from "./ContainerStyle.module.scss"
+import {ReactNode} from 'react'
+
+import stl from "./ContainerStyle.module.scss"
 
  type ContainerProps = {
    children: ReactNode;

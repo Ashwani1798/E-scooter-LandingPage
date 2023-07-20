@@ -29,38 +29,38 @@
       display: flex;
       align-items: center;
 
-      .innerLinkWrapper{
+      .innerLinkWrapper {
         display: flex;
         gap: 133px;
 
         .listHeading {
-        h5 {
-          margin-bottom: 35px;
-          font-weight: 700;
-          cursor: pointer;
-          transition: 0.3s all ease-in-out;
-
-          &:hover {
-            opacity: 0.5;
-          }
-        }
-        .subLinks {
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          cursor: pointer;
-
-          p {
+          h5 {
+            margin-bottom: 35px;
+            font-weight: 700;
+            cursor: pointer;
             transition: 0.3s all ease-in-out;
 
             &:hover {
-              opacity: 0.4;
+              opacity: 0.5;
+            }
+          }
+
+          .subLinks {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            cursor: pointer;
+
+            p {
+              transition: 0.3s all ease-in-out;
+
+              &:hover {
+                opacity: 0.4;
+              }
             }
           }
         }
       }
-      }
-      
     }
   }
 

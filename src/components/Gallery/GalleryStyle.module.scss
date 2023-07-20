@@ -7,6 +7,7 @@
   .headingWrapper {
     text-align: center;
     margin-bottom: 112px;
+
     h2 {
       font-weight: 700;
     }
@@ -22,13 +23,10 @@
     margin-top: 112px;
     display: flex;
     justify-content: space-between;
-    align-items:flex-end;
+    align-items: flex-end;
     padding: 0px 20px;
     gap: 1rem;
     flex-wrap: wrap-reverse;
-
-    @include layout.tablet {
-    }
 
     .leftWrapper {
       margin-inline: auto;
@@ -42,13 +40,11 @@
           height: 100%;
           width: 100%;
         }
+
         h4 {
           position: absolute;
           top: 30px;
           left: 38px;
-        }
-        @include layout.tablet {
-          //
         }
       }
 
@@ -61,6 +57,7 @@
 
     .rightWrapper {
       margin-inline: auto;
+
       .topImage,
       .bottomImage {
         max-width: 533px;
@@ -81,10 +78,6 @@
           top: 30px;
           left: 38px;
         }
-
-        @include layout.tablet {
-          //
-        }
       }
 
       .bottomImage {
@@ -92,9 +85,6 @@
           position: absolute;
           top: 30px;
           left: 38px;
-        }
-        @include layout.tablet {
-          //
         }
       }
     }

@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 
 import HeadingAndSubheading from "../HeadingAndSubheading";
@@ -13,20 +12,21 @@ const ProductInformation = () => {
   const features = featureslist;
   return (
     <>
-      <div  className={stl.productInfoWrapper}>
-        <HeadingAndSubheading heading={headingData[0]} subHeading={headingData[1]} />
+      <div className={stl.productInfoWrapper}>
+        <HeadingAndSubheading
+          heading={headingData[0]}
+          subHeading={headingData[1]}
+        />
         <div className={stl.contentWrapper}>
           <div className={stl.leftContent}>
-            <Image src={img} alt="eScooter"/>
+            <Image src={img} alt="eScooter" />
           </div>
           <div className={stl.rightContent}>
-            {
-              features.map((data,index)=>(
-                <div className={stl.list} key={index}>
-                  <IconWithText text={data} />
-                </div>
-              ))
-            }
+            {features.map((data, index) => (
+              <div className={stl.list} key={index}>
+                <IconWithText text={data} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
